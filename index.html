@@ -1430,5 +1430,17 @@ Every hour water sits, it soaks deeper into your walls, floors, and cabinets. Ou
     </a>
   </div>
     <script src="assets/js/main.js"></script>
-  
+<script>
+    // Remove Netlify badge
+    function removeNetlifyBadge() {
+          var badge = document.getElementById('nl-badge') || document.querySelector('.nl-badge') || document.getElementById('netlify-badge-anchor') || document.querySelector('.netlify-badge');
+          if (badge) { badge.remove(); }
+    }
+    document.addEventListener('DOMContentLoaded', removeNetlifyBadge);
+    setTimeout(removeNetlifyBadge, 500);
+    setTimeout(removeNetlifyBadge, 1500);
+    setTimeout(removeNetlifyBadge, 3000);
+</script>  
 </body></html>
+
+</script>
