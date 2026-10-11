@@ -49,3 +49,16 @@
     filter: grayscale(100%) contrast(120%) invert(90%) hue-rotate(180deg);
   }
 }
+
+
+/* Hide Netlify "Powered by Netlify" badge */
+#netlify-badge-anchor,
+.netlify-badge,
+[data-netlify-badge],
+a[href*="netlify.com"][style*="position: fixed"],
+a[href*="netlify.com"][style*="position:fixed"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
